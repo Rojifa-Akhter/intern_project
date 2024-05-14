@@ -1,0 +1,13 @@
+<?php
+//var_dump($_FILES['banner']);
+
+if ($_FILES['banner']["size"]<512) {
+//move_uploaded_file($_FILES['banner']["tmp_name"],"file/".$_FILES['banner']["name"]);
+move_uploaded_file($_FILES['banner']["tmp_name"],"file/"."banner.jpg");
+}else{
+  echo "MAC FILE SIZE IS 3768151288";
+}
+
+
+
+ ?>
